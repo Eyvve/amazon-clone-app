@@ -48,6 +48,10 @@
   color: white;
 }
 
+.header__option>span{
+  text-decoration: none;
+}
+
 .header__optionLineOne {
   font-size: 10px;
 }

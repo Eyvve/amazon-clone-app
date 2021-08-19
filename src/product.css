@@ -40,3 +40,12 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: black;
 }
+
+.product__button:hover{
+  background: #e2ba56;
+}
+
+.product__button:active{
+  border-color: #ea7b31;
+  border : 1px solid;
+}
