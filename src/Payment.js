@@ -21,7 +21,7 @@ function Payment() {
     const [clientSecret, setClientSecret] = useState(true);
 
     const [succeeded, setSucceeded] = useState(false);
-    const [processing, setProcessing] = useState("false");
+    const [processing, setProcessing] = useState("");
 
     useEffect(() => {
         // génère une clé secrète stripe pour faire payer le client
@@ -110,9 +110,9 @@ function Payment() {
                         <div className='payment__priceContainer'>
                            <CurrencyFormat renderText={(value) => (
                                 <>
-                                    <p>
+                                    <h3>
                                         Total de la commande : {value}
-                                    </p>
+                                    </h3>
                                 </>    
                             )}
                             decimalScale={2}
@@ -122,8 +122,8 @@ function Payment() {
                             suffix={"€"} 
                             />
                             <button disabled={processing || disabled || succeeded}>
-                                <span>{processing ? <p>en cours...</p> : "Payez"}</span>
-                            </button>
+                                        <span>{processing ? <p>En cours</p> : "Payez"}</span>
+                                    </button>
                         </div>
                         {/* errors */}
                         {error && <div>{error}</div>}

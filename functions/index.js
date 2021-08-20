@@ -32,3 +32,5 @@ app.post('/payments/create', async (request, response) => {
 
 // Listener
 exports.api = functions.https.onRequest(app)
+
+// http://localhost:5001/clone-ee23e/us-central1/api

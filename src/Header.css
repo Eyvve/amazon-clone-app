@@ -48,6 +48,11 @@
   color: white;
 }
 
+.header__option:hover{
+  color : #f0c14b;
+  cursor: pointer;
+}
+
 .header__option>span{
   text-decoration: none;
 }
@@ -68,6 +73,11 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.header__optionBasket:hover{
+  color: #f0c14b ;
+}
+
 
 .header__basketCount {
   margin-left: 10px;
